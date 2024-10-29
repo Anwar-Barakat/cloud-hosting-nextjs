@@ -18,12 +18,12 @@ const ErrorPage = (
     return (
         <div className="flex h-screen flex-col bg-white">
             <Image
-                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+                src={`https://images.unsplash.com/photo-1667984390527-850f63192709?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
                 alt=""
                 className="h-64 w-full object-cover"
                 width={1570}
                 height={100}
-                objectFit='cover'
+                objectFit='contain'
             />
 
             <div className="flex flex-1 items-center justify-center">
@@ -36,7 +36,7 @@ const ErrorPage = (
                         Error Message : {error.message}
                     </p>
 
-                    
+
 
                     <Link
                         href="/"
