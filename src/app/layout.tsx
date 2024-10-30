@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+
+// Toastify
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import "./globals.css";
+
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 
@@ -24,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
         <Header />
+        <ToastContainer />
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           {children}
         </div>
